@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamid Ousik | Graphic Designer</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- شريط التنقل -->
+<nav class="navbar">
+  <div class="logo">Hamid<span>.Design</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">الرئيسية</a></li>
+    <li><a href="#works">أعمالي</a></li>
+    <li><a href="#about">عني</a></li>
+    <li><a href="#contact">تواصل معي</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<header id="home" class="hero">
+  <div class="hero-content">
+    <h1>مرحباً، أنا <span>حميد أوسيك</span></h1>
+    <p>مصمم جرافيك وشعارات — أحوّل الأفكار إلى هويات بصرية لا تُنسى</p>
+    <a href="#works" class="btn">استكشف أعمالي</a>
+  </div>
+</header>
+
+<!-- معرض الأعمال -->
+<section id="works" class="works">
+  <h2>معرض الأعمال</h2>
+  <div class="filter">
+    <button data-filter="all" class="active">الكل</button>
+    <button data-filter="logo">شعارات</button>
+    <button data-filter="graphic">تصاميم</button>
+  </div>
+  <div id="gallery" class="gallery">
+    <!-- يتم تحميل الصور من localStorage -->
+  </div>
+</section>
+
+<!-- عني -->
+<section id="about" class="about">
+  <h2>عني</h2>
+  <p>مصمم جرافيك محترف متخصص في تصميم الشعارات والهويات البصرية. أعمل على تحويل رؤية العملاء إلى تصاميم عصرية مميزة.</p>
+</section>
+
+<!-- تواصل معي -->
+<section id="contact" class="contact">
+  <h2>تواصل معي</h2>
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="اسمك" required>
+    <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+    <textarea name="message" placeholder="رسالتك" rows="5" required></textarea>
+    <button type="submit" class="btn">إرسال</button>
+  </form>
+  <p class="email-direct">أو راسلني مباشرة: <a href="mailto:ousik.hamid@gmail.com">ousik.hamid@gmail.com</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Hamid Ousik — جميع الحقوق محفوظة</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

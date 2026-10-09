@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>لوحة التحكم</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;900&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+
+<!-- شاشة تسجيل الدخول -->
+<div id="loginScreen" class="login-screen">
+  <div class="login-box">
+    <h2>🔒 دخول المشرف</h2>
+    <input type="password" id="adminPass" placeholder="كلمة المرور">
+    <button onclick="login()" class="btn">دخول</button>
+    <p id="loginError" class="error"></p>
+  </div>
+</div>
+
+<!-- لوحة التحكم -->
+<div id="adminPanel" style="display:none;">
+  <h1>لوحة إدارة الأعمال</h1>
+
+  <div class="upload-box">
+    <h3>إضافة عمل جديد</h3>
+    <input type="text" id="title" placeholder="عنوان العمل">
+    <select id="category">
+      <option value="logo">شعار</option>
+      <option value="graphic">تصميم جرافيك</option>
+    </select>
+    <input type="file" id="imageFile" accept="image/png,image/jpeg,image/svg+xml,image/webp,application/pdf">
+    <button onclick="addWork()" class="btn">رفع العمل</button>
+  </div>
+
+  <h3>الأعمال الحالية</h3>
+  <div id="adminGallery" class="gallery"></div>
+
+  <button onclick="logout()" class="btn logout">تسجيل الخروج</button>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
