@@ -1,1 +1,1 @@
-# https-www.PortFolioosh.com
+# www.PortFolioosh.com
